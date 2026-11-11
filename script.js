@@ -104,7 +104,7 @@
       if (b.bottom < 0 || b.top > vh) return;
       const c = (b.top + b.height / 2 - vh / 2) / vh;
       img.style.animation = img.closest('.hero-foto') ? 'none' : '';
-      img.style.transform = `translateY(${c * -60}px) scale(${img.closest('.hero-foto') ? 1.04 + Math.max(0, y / vh) * .06 : 1.14})`;
+      img.style.transform = `translateY(${c * -60}px) scale(${img.closest('.hero-foto') ? 1 + Math.max(0, y / vh) * .04 : 1.14})`;
     });
   };
   const pedir = () => { if (!t) { t = true; requestAnimationFrame(atualizar); } };
